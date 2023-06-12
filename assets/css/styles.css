@@ -340,3 +340,331 @@ a:hover {
   background-color: transparent;
   color: var(--buttonsIconsBlue);
 }
+
+/**********************/
+/*     Navigation     */
+/**********************/
+
+.navbar {
+  background-color: var(--backgroundColour);
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.05);
+}
+
+.navbar .navbar-brand {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.navbar .logo-image img {
+  width: 126px;
+  height: 32px;
+}
+
+.navbar .logo-text {
+  color: var(--headingsTextBlack);
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 1rem;
+  text-decoration: none;
+}
+
+.offcanvas-collapse {
+  position: fixed;
+  top: 3.25rem;
+  bottom: 0;
+  left: 100%;
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  overflow-y: auto;
+  visibility: hidden;
+  background-color: var(--backgroundColour);
+  transition: visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
+}
+
+.offcanvas-collapse.open {
+  visibility: visible;
+  -webkit-transform: translate(-100%);
+  transform: translateX(-100%);
+}
+
+.navbar .navbar.nav {
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.navbar .nav-item .nav-link {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  color: var(--bodyTextDarkGrey);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.navbar .nav-item.dropdown.show .nav-link,
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {
+  color: var(--buttonsIconsBlue);
+}
+
+.navbar .dropdown .dropdown-menu {
+  animation: fadeDropdown 0.2s;
+}
+
+@keyframes fadeDropdown {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.navbar .dropdown-menu {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  border: none;
+  background-color: var(--backgroundColour);
+}
+
+.navbar .dropdown-item {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  color: var(--bodyTextDarkGrey);
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  text-decoration: none;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: var(--backgroundColour);
+  color: var(--buttonsIconsBlue);
+}
+
+.navbar .dropdown-divider {
+  width: 100%;
+  height: 1px;
+  margin: 0.5rem auto 0.5rem auto;
+  border: none;
+  background-color: #d1d1d1;
+}
+
+.navbar .navbar-toggler {
+  padding: 0;
+  border: none;
+  font-size: 1.25rem;
+}
+
+/******************/
+/*     Header     */
+/******************/
+
+.header {
+  padding-top: 8rem;
+  padding-bottom: 4em;
+  background: url("../images/header-background.jpg") center center no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.header .h1-large {
+  margin-bottom: 1.7rem;
+}
+
+.header .p-large {
+  margin-bottom: 2.25rem;
+}
+
+.header .image-container {
+  margin-top: 5rem;
+}
+
+/********************/
+/*     Services     */
+/********************/
+
+.cards-1 {
+  padding-top: 5rem;
+  padding-bottom: 2.25rem;
+}
+
+.cards-1 h2 {
+  margin-bottom: 3.5rem;
+}
+
+.cards-1 .card {
+  margin-bottom: 5rem;
+  border: none;
+  background-color: transparent;
+}
+
+.cards-1 .card-icon {
+  width: 66px;
+  height: 66px;
+  margin-bottom: 1.875rem;
+  border-radius: 8px;
+  background-color: #ddedfb;
+  text-align: center;
+}
+
+.cards-1 .card-icon .fas,
+.cards-1 .card-icon .far {
+  color: var(--buttonsIconsBlue);
+  font-size: 2rem;
+  line-height: 66px;
+}
+
+.cards-1 .card-icon.red {
+  background-color: #fbe4e4;
+}
+
+.cards-1 .card-icon .fas,
+.cards-1 .card-icon.red .far {
+  color: var(--buttonsIconsRed);
+}
+
+.cards-1 .card-icon.green {
+  background-color: #e0f4ea;
+}
+
+.cards-1 .card-icon.green .fas,
+.cards-1 .card-icon.green .far {
+  color: #16c66d;
+}
+
+.cards-1 .card-body {
+  padding: 0;
+}
+
+.cards-1 .card-title {
+  margin-bottom: 1.125rem;
+}
+
+.cards-1 .card-body p {
+  margin-bottom: 1.125rem;
+}
+
+.cards-1 .read-more {
+  color: var(--headingsTextBlack);
+}
+
+.cards-1 .read-more .fas {
+  color: var(--headingsTextBlack);
+}
+
+/*********************/
+/*     Details 1     */
+/*********************/
+
+.basic-1 {
+  padding-top: 2.25rem;
+  padding-bottom: 4.75rem;
+  background: linear-gradient(rgb(252, 250, 251), rgb(255, 255, 255));
+}
+
+.basic-1 .image-container {
+  margin-bottom: 4rem;
+}
+
+.basic-1 h2 {
+  margin-bottom: 1.7rem;
+}
+
+.basic-1 p {
+  margin-bottom: 2rem;
+}
+
+/*********************/
+/*     Details 2     */
+/*********************/
+.basic-2 {
+  padding-top: 4.5rem;
+  padding-bottom: 9.5rem;
+  background: url("../images/details-2-background.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.basic-2 .text-container {
+  margin-bottom: 4rem;
+}
+
+.bas2 h2 {
+  margin-bottom: 1.7rem;
+}
+
+.basic-2 p {
+  margin-bottom: 2rem;
+}
+
+/********************/
+/*     Features     */
+/********************/
+
+.accordion-1 {
+  padding-top: 9.2rem;
+  padding-bottom: 9.7rem;
+  background: url("../images/features-background.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.accordion-1 .h2-heading {
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.accordion-1 .p-heading {
+  margin-bottom: 4rem;
+  color: #fff;
+  text-align: center;
+}
+
+.accordion-1 .accordion {
+  margin-bottom: 5rem;
+}
+
+.accordion-1 .accordion-item {
+  margin-bottom: 2.5rem;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.accordion-1 .accordion-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.accordion-1 .accordion-icon {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #14be9f;
+}
+
+.accordion-1 .accordion-icon.blue {
+  background-color: #1d79fb;
+}
+
+.accordion-1 .accordion-icon.purple {
+  background-color: #dc63ff;
+}
+
+.accordion-1 .accordion-icon.orange {
+  background-color: #ff6c02;
+}
+
+.accordion-1 .accordion-icon .fas {
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 44px;
+}
